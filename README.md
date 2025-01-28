@@ -23,9 +23,14 @@ To run the transcription script, follow these steps:
    pip install -r requirements.txt
    ```
 
-2. Run the transcription script:
+2. Set the `OPENAI_API_KEY` environment variable:
+   ```bash
+   export OPENAI_API_KEY='your_openai_api_key'
+   ```
+
+3. Run the transcription script:
    ```bash
    python transcribe.py
    ```
 
-The script will print the transcription text to the console.
+The script requires the `OPENAI_API_KEY` to be set in order to work. The script will print the transcription text to the console.
